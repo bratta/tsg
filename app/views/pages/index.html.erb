@@ -1,0 +1,13 @@
+<h1>All Pages</h1>
+
+<% if @pages.empty? %>
+  <p>Sorry, nothing to see here!</p>
+<% else %>
+  <ul>
+  <% @pages.each do |page| %>
+    <li><%= link_to h(page.title), resource(page) %> [<%= link_to 'Edit', resource(article, :edit) %></li>
+  </ul>
+  <% end %>
+  </ul>
+<% end %>
+<p><%= link_to 'Create a shiny new page', resource(:pages, :new) %></p>
