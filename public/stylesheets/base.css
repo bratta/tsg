@@ -1,0 +1,14 @@
+/******************************************************** 
+ * CSS for timgourley dot com
+ * Written, created, conceived, etc. by Tim Gourley
+ * Copyright (C) 2008 Tim Gourley. All Rights Reserved.
+ ********************************************************/
+ 
+/* YUI reset.css to baseline CSS styling */
+@import url("reset.css"); 
+
+/* Typographical elements */
+@import url("type.css");
+
+/* Other elements */
+@import url("tsg.css");

@@ -1,0 +1,47 @@
+/******************************************************** 
+ * CSS for timgourley dot com
+ * type.css - handles typography elements
+ * Written, created, conceived, etc. by Tim Gourley
+ * Copyright (C) 2008 Tim Gourley. All Rights Reserved.
+ ********************************************************/
+
+/* Font sizes can be calculated by  SIZE_IN_EMS = PIXELS / 16 */
+
+
+/********************************************************
+ * Main Content
+ ********************************************************/
+ 
+body, table {
+	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+	font-size: 100%;       /* Fix for exaggerated font sizes in IE6/7 */
+	line-height: 1.125em;  /* Should be the same size regardless of text */
+} 
+pre {
+	font-size: 0.75em;
+	font-family: "Courier New", Courier, monospace;
+}
+h1 {
+	font-size: 1em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 0.875em;
+	font-weight: bold;
+}
+h3 {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#main {
+	font-size: 100%;
+}
+#main p {
+	font-size: 0.75em;
+}
+#main li {
+	font-size: 0.75em;
+}
+#footer {
+	font-size: 0.75em;
+}

@@ -1,0 +1,107 @@
+/********************************************************
+ * CSS for timgourley dot com
+ * tsg.css - handles most markup
+ * Written, created, conceived, etc. by Tim Gourley
+ * Copyright (C) 2008 Tim Gourley. All Rights Reserved.
+ ********************************************************/
+ 
+html, body {
+	height: 100%;
+}
+body {
+	background-color: #d3e5cd;
+	text-align: center;
+}
+h1,h2,h3,p {
+	margin-bottom: 10px;
+}
+a {
+	color: #8f0d39;
+}
+strong {
+	font-weight: bold;
+}
+blockquote {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: transparent url(../images/ccc.png) top left repeat-y;
+}
+pre {
+	margin: 10px;
+	padding: 10px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+#navigation ul, #navigation li {
+	list-style-type: none;
+}
+#navigation li, #navigation li a {
+	float: left;
+	background-color: #8f0d39;
+	width: 100px;
+	margin: 0 1px 1px 0;
+	height: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+#navigation li a:hover {
+	background-color: #c03;
+}
+#container {
+	width: 650px;
+	height: 322px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -325px;
+	margin-top: -161px;
+}
+#content {
+	width: 650px;
+	height: 300px;
+	clear: both;
+	background: transparent url(../images/tsg.png) no-repeat;
+}
+#main {
+	position: absolute;
+	top: 50px;
+	left: 212px;
+	width: 418px;
+	height: 243px;
+	overflow: scroll;
+	text-align: left;
+	padding: 4px;
+}
+#main ul {
+	margin-bottom: 10px;
+}
+#main ul, #main li {
+	list-style-type: disc;
+}
+#main li {
+	margin-left: 20px;
+}
+
+/* box-model compliant browsers */
+html>body #main {
+	height: 234px;
+	width: 410px;
+}
+#footer {
+	text-align: right;
+}
+#footer a {
+	color: #000;
+}
+
+
+.text {
+	width: 385px;
+}
+textarea {
+	width: 385px;
+	height: 110px;
+}

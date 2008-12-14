@@ -5,6 +5,7 @@ TAGS
 *~
 .#*
 config/database.yml
+db
 schema/schema.rb
 schema/*_structure.sql
 schema/*.sqlite3
@@ -13,6 +14,7 @@ schema/*.db
 *.sqlite
 *.sqlite3
 *.db
+*.tmproj
 src/*
 .hgignore
 .hg/*
