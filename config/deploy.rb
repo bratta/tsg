@@ -12,9 +12,9 @@ set :deploy_via, :remote_cache
 
 set :git_shallow_clone, 1
 
-set :deploy_base, "/data/#{application}"
-set :deploy_path, "#{deploy_base}/current"
-set :shared_path, "#{deploy_base}/shared"
+set :deploy_to, "/data/#{application}"
+set :deploy_path, "#{deploy_to}/current"
+set :shared_path, "#{deploy_to}/shared"
 
 # Set this so the password prompt comes up ok
 default_run_options[:pty] = true
