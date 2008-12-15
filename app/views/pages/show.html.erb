@@ -1,3 +1,10 @@
 <h1><%=h @page.title%></h1>
 
+<% if session.user %>
+  <p>
+    [<%= link_to 'Edit', resource(@page, :edit) %>] 
+    [<%= link_to 'Delete', resource(@page, :delete), :class => 'delete' %>]
+  </p>
+<% end %>
+
 <%= redcloth @page.content %>

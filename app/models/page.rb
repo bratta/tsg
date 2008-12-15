@@ -6,4 +6,7 @@ class Page
   property :title, String
   property :content, Text
 
+  def self.navigation
+    all(:order => [:id.asc])
+  end
 end

@@ -16,12 +16,15 @@
 
 	<div id="navigation">
 		<ul>
-			<li><a href="/" id="tg-home">Home</a></li>
-			<li><a href="page-blog.html" id="tg-blog">Blog</a></li>
-			<li><a href="page-about.html" id="tg-about">About</a></li>
-			<li><a href="page-interests.html" id="tg-interests">Interests</a></li>
-			<li><a href="page-resume.html" id="tg-resume">R&eacute;sum&eacute;</a></li>
-
+		  <% Page.navigation.each do |page| %>
+		    <li><%= link_to page.title, resource(page) %></li>
+		  <% end %>
+		  <% if session.user %>
+		    <li><%= link_to 'Pages', resource(:pages) %></li>
+		    <li><a href="/logout">Logout</a></li>
+		  <% else %>
+		    <li><a href="/login">Login</a></li>
+		  <% end %>
 		</ul>
 	</div>
 	<div id="content">

@@ -1,6 +1,8 @@
 class Pages < Application
   # provides :xml, :yaml, :js
 
+  before :ensure_authenticated, :only => [ :new, :edit, :create, :update, :delete ]
+
   def index
     @pages = Page.all
     display @pages
@@ -45,7 +47,7 @@ class Pages < Application
     end
   end
 
-  def destroy(id)
+  def delete(id)
     @page = Page.get(id)
     raise NotFound unless @page
     if @page.destroy
@@ -54,5 +56,4 @@ class Pages < Application
       raise InternalServerError
     end
   end
-
 end # Pages
