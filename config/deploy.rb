@@ -29,6 +29,7 @@ role :db,  location, :primary => true
 desc "Create shared symbolic links"
 task :create_shared_symlinks do
   run "ln -s #{shared_path}/config/database.yml #{deploy_path}/config/database.yml"
+  run "ln -s #{shared_path}/public/docs #{deploy_path}/public/docs"
   run "ln -s #{shared_path}/db #{deploy_path}/db"
 end
 
