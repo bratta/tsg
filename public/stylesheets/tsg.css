@@ -112,9 +112,12 @@ textarea {
 #admin-navigation ul {
 	z-index: 999;
 	float: left;
-	position: absolute;	
 	bottom: 0;
 	right: 0;	
+  position:fixed;
+  //position: absolute;
+  top:expression(eval(document.body.scrollTop) + "px");
+  left:expression(eval(document.body.scrollLeft) + "px");	
 }
 #admin-navigation li, #admin-navigation li a {
 	position: relative;
