@@ -16,14 +16,11 @@
 
 	<div id="navigation">
 		<ul>
+		  <% if Page.navigation.empty? %>
+		    <li>No Pages</li>
+		  <% end %>
 		  <% Page.navigation.each do |page| %>
 		    <li><%= link_to page.title, resource(page) %></li>
-		  <% end %>
-		  <% if session.user %>
-		    <li><%= link_to 'Pages', resource(:pages) %></li>
-		    <li><a href="/logout">Logout</a></li>
-		  <% else %>
-		    <li><a href="/login">Login</a></li>
 		  <% end %>
 		</ul>
 	</div>
@@ -37,6 +34,17 @@
   <div id="footer">
     Copyright &copy; 2008 Tim Gourley. All Rights Reserved. Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
   </div>
+</div>
+<div id="admin-navigation">
+  <ul>
+	  <% if session.user %>
+	    <li><%= link_to 'Pages', resource(:pages) %></li>
+	    <li><a href="/logout">Logout</a></li>
+	  <% else %>
+	    <!-- Uncomment this if you want the login link publicized -->
+	    <!--<li><a href="/login">Login</a></li> -->
+	  <% end %>
+  </ul>
 </div>
 </body>
 </html>

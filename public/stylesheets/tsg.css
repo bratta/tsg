@@ -105,3 +105,28 @@ textarea {
 	width: 385px;
 	height: 110px;
 }
+
+#admin-navigation ul, #admin-navigation li {
+	list-style-type: none;
+}
+#admin-navigation ul {
+	z-index: 999;
+	float: left;
+	position: absolute;	
+	bottom: 0;
+	right: 0;	
+}
+#admin-navigation li, #admin-navigation li a {
+	position: relative;
+  float: left;
+	background-color: #8f0d39;
+	width: 100px;
+	margin: 0 1px 1px 0;
+	height: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+#admin-navigation li a:hover {
+	background-color: #c03;
+}
